@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{burc.name}} Burcu <img src="assets/ICO/{{ burc.$key }}.ico"></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let oz of ozellikler" >
+      {{oz.deger}}
+      <ion-note item-right>
+        {{oz.adi}}
+      </ion-note>
+    </ion-item>
+  </ion-list>
+
+
+
+  <div padding>
+
+    {{burc.bilgi}}
+
+  </div>
+
+</ion-content>

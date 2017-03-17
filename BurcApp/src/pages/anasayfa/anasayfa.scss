@@ -1,0 +1,19 @@
+page-anasayfa {
+    ion-list {
+        ion-item {
+            width: 50% !important;
+            height: 140px !important;
+            border: none;
+            float: left;
+            text-align: center !important;
+            .item-inner{
+                border: none !important;
+            }
+            ion-thumbnail{
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Burçlar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <span *ngFor="let burc of burclar | async">
+      <ion-item (click)="detay(burc)">
+        <ion-thumbnail>
+          <img src="assets/ICO/{{ burc.$key }}.ico">
+        </ion-thumbnail>
+        <h2>{{burc.name}} Burcu</h2>
+        <p>{{burc.bilgi}}</p>
+      </ion-item>
+
+    </span>
+  </ion-list>
+</ion-content>
